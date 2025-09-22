@@ -93,7 +93,7 @@ select {
 
 .frameworks-list {
     list-style: none; /* отключаем стандартные маркеры !*/
-    padding-left: 0;  /* сбрасываем отступ, чтобы управлять через flex */
+    padding: 0px 20px; 
     margin-bottom: 0;
 }
 
@@ -116,9 +116,8 @@ select {
 
 
 .books-list {
-    padding-left: 0px 20px;         /* чтобы видны цифры */
+    padding: 0px 20px; 
     font-size: 16px;            /* размер текста */
-
 
 }
 
