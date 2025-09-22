@@ -88,7 +88,6 @@ select {
 }
 
 
-
 .frameworks-list {
     list-style: none; /* отключаем стандартные маркеры */
     padding-left: 0;  /* сбрасываем отступ, чтобы управлять через flex */
@@ -133,7 +132,7 @@ input[type="checkbox"] {
 .text-field {
      width: 300px;               /* ширина поля */
     padding: 8px 10px;          /* внутренние отступы */
-    border: 1px solid #2965f1;  /* синяя рамка */
+    border: 1px solid #3030304D;  /* синяя рамка */
     border-radius: 4px;         /* скруглённые углы */
     font-size: 16px;            /* размер вводимого текста */
     margin-right: 9px;         /* небольшой отступ справа от кнопки */
