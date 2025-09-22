@@ -63,7 +63,7 @@ header span {
 
 
 .about-section {
-    /* Стили для второй секции */
+    /* Стили для второй секции !*/
      background-color: #fff;     /* белый фон */
     padding: 100px 0px;              /* отступы со всех сторон */
     text-align: left;           /* всё по левому краю */
@@ -78,10 +78,13 @@ select {
     border-radius: 4px;
     width: 150px;                                    /* фиксированная ширина */
     padding: 8px 30px 8px 10px;  
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* чтобы стрелка была справа */
+    appearance: none; /* убираем стандартную стрелку браузера */
 }
 
 .section-title {
-    /* Стили для заголовков во второй секции */
+    /* Стили для заголовков во второй секции !*/
     font-weight: 700;           /* жирный */
     font-size: 24px;            /* размер */
     margin: 0px 0 25px;        /* сверху 25px, снизу 10px */
@@ -89,7 +92,7 @@ select {
 
 
 .frameworks-list {
-    list-style: none; /* отключаем стандартные маркеры */
+    list-style: none; /* отключаем стандартные маркеры !*/
     padding-left: 0;  /* сбрасываем отступ, чтобы управлять через flex */
     margin-bottom: 0;
 }
@@ -113,7 +116,7 @@ select {
 
 
 .books-list {
-    padding-left: 20px;         /* чтобы видны цифры */
+    padding-left: 0px 20px;         /* чтобы видны цифры */
     font-size: 16px;            /* размер текста */
 
 
@@ -167,14 +170,14 @@ table {
 
 th, td {
 border: 1px solid #303030;  /* рамка для каждой ячейки */
-    padding: 8px 12px;          /* внутренние отступы ячеек */
+    padding: 12px 15px;          /* внутренние отступы ячеек */
     text-align: left;           /* текст по левому краю */
 }
 
 /* ===== Футер ===== */
 footer {
     background-color: #A3A7FF;  /* синий фон футера */
-    padding: 26px 0px 27px 1px;         /* отступы внутри футера */
+    padding: 26px 0px ;         /* отступы внутри футера */
 }
 
 .footer-link {
