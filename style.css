@@ -78,6 +78,7 @@ select {
     border-radius: 4px;
     width: 150px;                                    /* фиксированная ширина */
     padding: 8px 30px 8px 10px;  
+    appearance: none;     
     background-repeat: no-repeat;
     background-position: right 10px center; /* чтобы стрелка была справа */
     appearance: none; /* убираем стандартную стрелку браузера */
