@@ -5,81 +5,182 @@
     box-sizing: border-box;
 }
 
-body {}
-
+body {
+    font-family: "Inter", sans-serif; /* основной шрифт для всего сайта */
+    color: #303030;                   /* базовый цвет текста */
+    background-color: #fff;           /* белый фон всей страницы */
+    line-height: 1.4;                 /* комфортная межстрочная высота */
+}
+    
 header {
     /* Стили для хедера */
+    background-color: #2965f1;  /* синий фон хедера */
+    padding: 23px 0px;         /* отступы: сверху/снизу 15px, слева/справа 40px */
+    
 }
 
 header span {
     /* Стили для текста в хедере IT-INCUBATOR */
+    font-weight: 700;           /* жирное начертание текста IT-INCUBATOR */
+    font-size: 20px;            /* размер текста */
+    color: #fff;              /* белый цвет текста */
 }
+
+
 
 .main-section {
     /* Стили для первой секции */
+    background-color: #fafaff;  /* светлый фон */
+    padding: 60px 0px;         /* отступы: сверху/снизу 60px, по бокам 40px */
+    min-height: 100vh;          /* высота не меньше высоты окна браузера */
+    text-align: left;           /* выравнивание содержимого по левому краю */
+
+
 }
 
 .main-title {
     /* Стили для заголовка в первой секции */
+    font-weight: 700;           /* жирный заголовок */
+    font-size: 48px;            /* крупный размер */
+    margin-bottom: 20px;        /* отступ снизу до следующего элемента */
+
 }
 
 .main-text {
     /* Стили для текста в первой секции */
+    font-weight: 400;
+    font-size: 18px;            /* размер обычного текста */
+    
+
 }
 
 .main-image {
     /* Стили для изображения в первой секции */
+  max-width: 715px;           /* изображение не шире 715px */
+    width: 100%;                /* но может сжиматься до ширины контейнера */
+    height: auto;               /* сохраняем пропорции */
 }
 
 
 .about-section {
     /* Стили для второй секции */
+     background-color: #fff;     /* белый фон */
+    padding: 100px 0px;              /* отступы со всех сторон */
+    text-align: left;           /* всё по левому краю */
+
 }
 
 select {
     /* Стили для выпадающего списка */
+    
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 4px;
+    width: 150px;                                    /* фиксированная ширина */
+    padding: 8px 30px 8px 10px;  
 }
 
 .section-title {
     /* Стили для заголовков во второй секции */
+    font-weight: 700;           /* жирный */
+    font-size: 24px;            /* размер */
+    margin: 0px 0 25px;        /* сверху 25px, снизу 10px */
 }
+
+
 
 .frameworks-list {
-    /* Стили для маркированного списка во второй секции */
+    list-style: none; /* отключаем стандартные маркеры */
+    padding-left: 0;  /* сбрасываем отступ, чтобы управлять через flex */
+    margin-bottom: 0;
 }
 
+.frameworks-list li {
+    display: flex;              /* включаем flex для каждой строки */
+    align-items: center;        /* вертикальное выравнивание текста по центру маркера */
+    gap: 10px;                  /* расстояние между маркером и текстом */
+    margin-bottom: 8px;         /* отступ между элементами списка */
+}
+
+.frameworks-list li::before {
+    content: ""; 
+    display: inline-block;
+    width: 24px;                /* ширина маркера */
+    height: 24px;               /* высота маркера */
+    background-image: url('/assets/solar_map-arrow-up-bold@2x.png'); /* ваше изображение */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
 .books-list {
-    /* Стили для нумерованного списка во второй секции */
+    padding-left: 20px;         /* чтобы видны цифры */
+    font-size: 16px;            /* размер текста */
+
+
 }
 
 .label {
-    /* Стили для подписей чекбоксов */
+    font-size: 16px;
+    margin-bottom: 6px;         /* небольшой отступ между ними */
+}
+/* для всех чекбоксов на странице */
+input[type="checkbox"] {
+  accent-color: #2965f1; /* нужный синий */
 }
 
+/* ===== Поле ввода и кнопка ===== */
 .text-field {
-    /* Стили для односточного поля ввода текста */
+     width: 300px;               /* ширина поля */
+    padding: 8px 10px;          /* внутренние отступы */
+    border: 1px solid #2965f1;  /* синяя рамка */
+    border-radius: 4px;         /* скруглённые углы */
+    font-size: 16px;            /* размер вводимого текста */
+    margin-right: 9px;         /* небольшой отступ справа от кнопки */
+
 }
 
 .btn {
-    /* Стили для кнопки */
+ background-color: #2965f1;  /* синий фон */
+    color: #fff;               /* белый текст */
+    border: none;              /* без рамки */
+    border-radius: 6px;        /* скруглённые углы */
+    padding: 8px 16px;         /* внутренние отступы */
+    font-size: 16px;
+    cursor: pointer;           /* курсор-рука при наведении */
 }
 
+/* ===== Разделительная линия ===== */
 .line {
-    /* Стили для линии */
+ border: 1px solid rgba(48, 48, 48, 0.3); /* полупрозрачная линия */
+    margin: 60px 0;    
 }
 
+/* ===== Таблица ===== */
 table {
-    /* Стили для таблицы */
+    border-collapse: collapse;  /* объединяем границы ячеек */
+    width: 300px;               /* ширина таблицы */
+    height: 196px;     /* Высота таблицы: 196 пикселей (задаёт минимальную высоту, но если контент больше — таблица может растянуться) */
+    font-weight: 400;  /* Насыщенность шрифта: 400 = обычный (normal) */
+    font-size: 14px;   /* Размер текста: 14 пикселей */
+    color: #303030;    /* Цвет текста: тёмно-серый (#303030) */
 }
 
 th, td {
-    /* Стили для ячеек таблицы */
+border: 1px solid #303030;  /* рамка для каждой ячейки */
+    padding: 8px 12px;          /* внутренние отступы ячеек */
+    text-align: left;           /* текст по левому краю */
 }
 
+/* ===== Футер ===== */
 footer {
-    /* Стили для футера */
+    background-color: #A3A7FF;  /* синий фон футера */
+    padding: 26px 0px 27px 1px;         /* отступы внутри футера */
 }
 
 .footer-link {
-    /* Стили для футера */
+    color: #2965F1;
+    text-decoration: none;
+    font-size: 14px;
+
 }
